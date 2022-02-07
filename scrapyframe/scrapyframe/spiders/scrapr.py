@@ -5,7 +5,7 @@ from scrapy.linkextractors import LinkExtractor
 
 
 class QuotesSpider(scrapy.Spider):
-    name = "prop"
+    name = "properties"
     start_urls = [
         'https://www.bayut.com/property/details-5690203.html'
     ]

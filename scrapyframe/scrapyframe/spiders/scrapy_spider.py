@@ -18,7 +18,7 @@ class QuotesSpider(CrawlSpider):
     )
 
     def parse(self, response):
-        for quote in response.css('div#body-wrapper'):
+        for quote in response.css('div#body-wrapper'): #main div Selector
             yield {
                 'Property_Id' :quote.xpath('main/div[3]/div[1]/div[4]/div/div[2]/ul/li[3]/span[2]/text()').get(),
                 'Type' :quote.xpath('main/div[3]/div[1]/div[4]/div/div[2]/ul/li[1]/span[2]/text()').get(),
